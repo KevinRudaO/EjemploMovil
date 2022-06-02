@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemploMovil.Views.frmIMC">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CALCULO DE IMC" FontSize="Medium" FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nombre del paciente " FontSize="Small" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry x:Name="txtNombre" HorizontalOptions="Center" FontSize="Small" Keyboard="Text"></Entry>
+
+            <Label Text="Peso del paciente " FontSize="Small" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry x:Name="txtPeso" HorizontalOptions="Center" FontSize="Small" Keyboard="Numeric"></Entry>
+
+            <Label Text="Altura del paciente " FontSize="Small" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry x:Name="txtAltura" HorizontalOptions="Center" FontSize="Small" Keyboard="Numeric"></Entry>
+
+            <Button x:Name="btnCalcular" Text="Calcular IMC" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Aqua"
+                    Clicked="btnCalcular_Clicked"></Button>
+
+            <Label Text="IMC calculado: " FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            <Label x:Name="lblIMC" FontSize="Small" FontAttributes="None" HorizontalTextAlignment="Center" BackgroundColor="Black"></Label>
+
+                <Label Text="Recomendaciones: " FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+            <Label x:Name="lblRecomendaciones" FontSize="Small" FontAttributes="None" HorizontalTextAlignment="Center" BackgroundColor="Black"></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
